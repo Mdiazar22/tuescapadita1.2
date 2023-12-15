@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/estilos1.css' %}">
+    <title>{% block title %}{% endblock %}Tu Escapadita</title>
+</head>
+<body>
+    <!--HEADER (MARIEL)-->
+    <header class="sticky-header">
+        <div class="logo">
+            <img src="{% static 'core/img/BLANCO.png' %}" alt="Logo de la Empresa">
+        </div>
+        <div class="nombre-empresa">
+            <a href="#HOME">Tu Escapadita</a>
+        </div>
+        <nav class="navegacion">
+            <ul>
+                <li><a href="#PLANES">PLANES</a></li>
+                <li><a href="#ARMALO">ARMALO</a></li>
+                <li><a href="#CONTACTANOS">CONTACTANOS</a></li>
+                <li><a href="#NOSOTRXS">NOSOTRXS</a></li>
+                <li><a href="#">DESTINOS</a></li>
+            </ul>
+        </nav>
+        <div class="boton-login">
+            <a href="{% url 'login' %}">LOGIN</a>
+        </div>
+    </header>
+    <!-- FIN HEADER (MARIEL)-->
+
+    {% comment %} contenido {% endcomment %}
+
+    {% block content %}{% endblock %}
+
+</body>
+</html>

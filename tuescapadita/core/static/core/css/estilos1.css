@@ -1,0 +1,578 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section[id] {
+    scroll-margin-top: 2em;
+}
+
+.nombre-empresa a{
+    text-decoration: none;
+    color: white;
+}
+
+/*HEADER*/
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #64abe3;
+    color: #fff;
+    padding: 0.6em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 3.1em;
+    margin-left: 5em;
+}
+
+.nombre-empresa {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: 0.6em;
+}
+
+.navegacion ul {
+    list-style: none;
+    font-weight: bold;
+    padding: 0;
+    display: flex;
+    margin-right: 6em;
+}
+
+.navegacion li {
+    margin: 0 1em;
+}
+
+.navegacion li :hover{
+    color: #FAAA8F;
+    text-shadow: .2em .2em .3em black;
+}
+
+.navegacion a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.boton-login a {
+    background-color: #FAAA8F;
+    color: black;
+    font-weight: bold;
+    margin-right: 5em;
+    padding: 1em 2em;
+    border-radius: 0.3em;
+    text-decoration: none;
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    -ms-border-radius: 0.3em;
+    -o-border-radius: 0.3em;
+}
+
+.boton-login :hover{
+    background-color: #F9C6B3;
+    box-shadow: .2em .2em .5em black;
+}
+/*FIN HEADER*/
+/*HOME*/
+.HOME{
+    background-color: #64abe3;
+    width: 100%;
+    height: 100%;
+    padding: auto;
+    display: flex;
+}
+
+.slider-box{
+    position: relative;
+    width: 85%;
+    height: 100%;
+    margin: 1em auto 0;
+    overflow: hidden;
+}
+
+.slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+    -webkit-animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li{
+    width: 100%;
+    list-style: none;
+    object-fit: cover;
+    filter: blur(0.3em);
+    -webkit-filter: blur(0.3em);
+}
+
+.textoslider{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 3em;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.textoslider h2{
+    font-size: 3em;
+    margin-bottom: 1em;
+    text-shadow: .2em .2em .3em black;
+}
+
+.textoslider p{
+    font-size: 1.5em;
+    margin-top: -1.3em;
+    text-shadow: .1em .1em .2em black;
+}
+
+.slider-box img{
+    width: 100%;
+}
+
+@keyframes slide{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+/*FIN STYLE HOME*/
+/*PLANES*/
+.planes-section {
+    width: 100%;
+    text-align: center;
+    background-color: #92C4EE;
+    padding: 2rem 0;
+}
+
+.planes-content {
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #FDD8B5;
+    box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.3);
+}
+
+.planes-section h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.planes-section h2 {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.planes-gallery {
+    display: flex;
+    display: flexbox;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.planes-product-card {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 23em;
+    flex: 0 0 calc(20% - 2rem);
+    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.1);
+    margin: 0 1rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+}
+
+.planes-product-card img {
+    width: 100%;
+    height: 6em;
+    object-fit: cover;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 1rem;
+}
+
+.reservar-button {
+    display: block;
+    background-color: #FAAA8F;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+}
+
+.reservar-button:hover {
+    background-color: #F9C6B3;
+}
+/*ARMALO*/
+.armalo-section {
+    background-color: #BBDBF7;
+    padding: 2rem 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .armalo-contenedor{
+    background-color: #F9D199;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 0 auto;
+    padding: 2em;
+    box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.3);
+  }
+  
+  .armalo-header{
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .armalo-encabezado {
+      text-align: center;
+      margin-top: 0em;
+      font-weight: bold;
+    }
+  
+  .armalo-encabezado h1{
+      font-size: 1.5em;
+    }
+  
+  .armalo-encabezado p{
+      font-size: 1rem;
+    }
+    
+  .armalo-opciones {
+      display: flexbox;
+      align-items: center;
+    }
+  
+  .sliders-and-products {
+      display: flex;
+    }
+    
+  .armalo-sliders {
+      margin-left: 3em;
+      padding: 1em;
+      width: 40%;
+      height: 40%;
+      background-color: #28BBB8;
+      justify-content: center;
+      text-align: center;
+      border-radius: 1em;
+      -webkit-border-radius: 1em;
+      -moz-border-radius: 1em;
+      -ms-border-radius: 1em;
+      -o-border-radius: 1em;
+  }
+    
+  .armalo-carousel {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .product-card {
+      display: flexbox;
+      background-color: #F6E3D4;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      text-align: center;
+      margin-right: 3em;
+      margin-left: 1em;
+    }
+    
+    .product-card img{
+      width: 15em;
+      height: 10em;
+      margin-top: 2em;
+    }
+  
+    .slider {
+      display: flexbox;
+      flex-direction: row;
+      background-color: white;
+      height: 5.2em;
+      padding: .2em;
+      border-radius: 1em;
+      -webkit-border-radius: 1em;
+      -moz-border-radius: 1em;
+      -ms-border-radius: 1em;
+      -o-border-radius: 1em;
+      margin-bottom: 1em;
+      justify-content: center;
+      align-items: center;
+      font-size: .9em;
+  }
+  
+  .sliders h3{
+    font-size: 1em;
+    margin-top: 0em;
+  }
+  
+  .slider h4{
+    margin-top: .5em;
+    margin-bottom: .6em;
+  }
+  
+  .slider input{
+    margin-top: 0em;
+  }
+  
+  .slider p{
+    margin-top: 0em;
+  }
+  
+  .product-card h4{
+    text-align: center;
+  }
+  
+  .product-card p{
+    text-align: center;
+    padding: 0 10em;
+  }
+
+  .reserve-button{
+    background-color: #FAAA8F;
+    color: #fff;
+    border: none;
+    padding: 1.25em 2.5em;
+    cursor: pointer;
+    margin-bottom: 2em;
+    font-weight: bold;
+  }
+/*FIN ARMALO*/
+/*CONTACTANOS*/
+.contactanos-contenedor {
+    background-color: #F6E3D4;
+    display: flex;
+    padding: 2rem 0;
+    width: 100%;
+  }
+  
+  .contactanos-contenido {
+    background-color: #92C4EE;
+    justify-content: center;
+    padding: 2em;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.3);
+  }
+  
+  .contactanos-contenido h2 {
+    font-size: 1.5em;
+  }
+
+.contactanos-contenido p{
+    font-size: 1em;
+}
+  
+  .form {
+    background-color: #fff;
+    border: .1em solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.25em;
+    padding: .5em;
+  }
+  
+  .form .left {
+    flex: 1;
+    justify-content: center;
+    margin-right: 0.6em;
+    margin-left: 5em;
+  }
+  
+  .form .right {
+    flex: 1;
+  }
+  
+  .form input,
+  .form textarea {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    background-color: gainsboro;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: .1em solid #ccc;
+    border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+    -moz-border-radius: 0.25em;
+    -ms-border-radius: 0.25em;
+    -o-border-radius: 0.25em;
+}
+  
+  .form button {
+    background-color: #FAAA8F;
+    color: #fff;
+    border: none;
+    padding: 1.25em 2.5em;
+    cursor: pointer;
+    margin-left: -9em;
+    font-weight: bold;
+  }
+  
+  .texto-form{
+    text-align: left;
+  }
+
+  .right textarea{
+    height: 60%;
+  }
+
+.encabezado-form{
+    margin-top: 0em;
+}
+/*FIN CONTACTANOS*/
+/*FOOTER*/
+footer {
+  background-color: #FDD8B5;
+  color: #fff;
+  text-align: center;
+  padding: 2em 0;
+  width: 100%;
+}
+
+.contenedor-footer {
+  background-color: #64ABE3;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.3);
+}
+
+.contenedor-footer h1 {
+  font-size: 2em;
+  margin-bottom: .5em;
+  margin-top: 1.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.imagenes-footer {
+  position: relative;
+  width: 100%;
+}
+
+.img-pie {
+  width: 100%;
+  display: block;
+}
+
+.img-superpuesta1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 20em;
+  margin-top: 2em;
+  width: 3em;
+}
+
+.img-superpuesta2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 20em;
+  margin-top: 7em;
+  width: 3em;
+}
+
+.img-superpuesta3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 20em;
+  margin-top: 12em;
+  width: 3em;
+}
+
+.txt-superpuesto1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 10em;
+  margin-top: 3em;
+}
+
+.txt-superpuesto2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 10em;
+  margin-top: 8em;
+}
+
+.txt-superpuesto3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 10em;
+  margin-top: 13em;
+}
+
+.imagenes-footer a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.imagenes-footer a :hover{
+  color: #FAAA8F;
+  text-shadow: .1em .1em .2em black;
+}
+
+.txt-superpuesto4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 18em;
+  margin-top: 25em;
+  font-weight: bold;
+}
+/*FIN FOOTER*/
